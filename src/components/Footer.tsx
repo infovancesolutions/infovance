@@ -4,7 +4,7 @@ import ScrollAnimation from "../animation/ScrollAnimation";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-[#0B1E39] text-white m-0 p-0">
+    <footer className="w-full bg-[#051439] text-white m-0 p-0">
       <div className="w-full py-12 space-y-8 px-6 md:px-12">
         
         {/* ---------------- ROW 1: COMPANY INFO ---------------- */}
