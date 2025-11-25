@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
                       href="mailto:contact@infovance.com" 
                       className="text-white hover:text-orange-400 transition-colors text-sm font-medium"
                     >
-                      contact@infovance.com
+                      info@infovancesolutions.com
                     </a>
                   </div>
                 </div>

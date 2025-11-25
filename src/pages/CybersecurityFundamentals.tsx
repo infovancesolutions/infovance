@@ -70,26 +70,42 @@ export default function CybersecurityFundamentals() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50 z-[2]"></div>
 
+       
         {/* Animated Heading and Paragraph */}
-        <div className="relative z-[3] px-6">
-          <h1
-            className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-wide flex flex-wrap justify-center"
-            style={{ fontFamily: "'PT Serif', serif" }}
+<div className="relative z-[3] px-6">
+  <h1
+    className="text-4xl md:text-7xl font-bold text-white mb-6 tracking-wide text-center"
+    style={{ fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" }}
+  >
+    {"Cyber Security".split(" ").map((word, wordIndex) => (
+      <div key={wordIndex} className="inline-block">
+        {word.split("").map((letter, letterIndex) => (
+          <span
+            key={`${wordIndex}-${letterIndex}`}
+            className="inline-block opacity-0"
+            style={{
+              animation: animate ? `letterEnter 0.6s forwards` : "none",
+              animationDelay: animate ? `${(wordIndex * word.length + letterIndex) * 0.08}s` : "0s",
+            }}
           >
-            {"Cyber Security".split("").map((letter, i) => (
-              <span
-                key={i}
-                className="inline-block opacity-0"
-                style={{
-                  animation: animate ? `letterEnter 0.6s forwards` : "none",
-                  animationDelay: animate ? `${i * 0.08}s` : "0s",
-                }}
-              >
-                {letter === " " ? "\u00A0" : letter}
-              </span>
-            ))}
-          </h1>
-        </div>
+            {letter}
+          </span>
+        ))}
+        {/* Add space between words except after the last word */}
+        {wordIndex < "Cyber Security".split(" ").length - 1 && (
+          <span className="inline-block opacity-0"
+            style={{
+              animation: animate ? `letterEnter 0.6s forwards` : "none",
+              animationDelay: animate ? `${(wordIndex * word.length + word.length) * 0.08}s` : "0s",
+            }}
+          >
+            &nbsp;
+          </span>
+        )}
+      </div>
+    ))}
+  </h1>
+</div>
       </div>
       {/* ===== HERO SECTION ===== */}
       <div className="text-center py-12 px-6 md:px-16">

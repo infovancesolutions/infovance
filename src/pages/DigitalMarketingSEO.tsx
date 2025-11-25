@@ -66,8 +66,8 @@ export default function DigitalMarketingSEO() {
         {/* Split Animated Title */}
         <div className="relative z-[3] px-6 mt-16">
           <h1
-            className="text-4xl md:text-7xl font-extrabold text-white mb-6 tracking-wide flex flex-wrap justify-center"
-            style={{ fontFamily: "'PT Serif', serif" }}
+            className="text-4xl md:text-7xl font-bold text-white mb-6 tracking-wide flex flex-wrap justify-center"
+            style={{ fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" }}
           >
             {"Digital Marketing".split("").map((letter, i) => (
               <span
@@ -84,8 +84,8 @@ export default function DigitalMarketingSEO() {
           </h1>
 
           <h1
-            className="text-5xl md:text-7xl font-extrabold text-sky-300 mb-6 tracking-wide flex flex-wrap justify-center"
-            style={{ fontFamily: "'PT Serif', serif" }}
+            className="text-5xl md:text-7xl font-bold text-sky-300 mb-6 tracking-wide flex flex-wrap justify-center"
+            style={{ fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif"}}
           >
             {"& SEO".split("").map((letter, i) => (
               <span

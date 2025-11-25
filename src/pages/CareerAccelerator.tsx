@@ -59,10 +59,10 @@ export default function CareerAccelerator() {
             {/* Animated Heading and Paragraph */}
             <div className="relative z-[3] px-6">
               <h1
-                className="text-3xl md:text-5xl font-extrabold text-white mt-72 tracking-wide flex flex-wrap justify-center"
-                style={{ fontFamily: "'PT Serif', serif" }}
+                className="text-3xl md:text-5xl font-bold text-white mt-72 tracking-wide flex flex-wrap justify-center"
+                style={{ fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif"}}
               >
-                {"Start Your Professional  Journey with Infovance".split("").map((letter, i) => (
+                {"Start Your Professional Journey with Infovance".split("").map((letter, i) => (
                   <span
                     key={i}
                     className="inline-block opacity-0"
@@ -76,6 +76,7 @@ export default function CareerAccelerator() {
                 ))}
               </h1>
             </div>
+            
           </div>
   
       {/* ===== HERO SECTION ===== */}

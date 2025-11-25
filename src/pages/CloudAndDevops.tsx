@@ -51,8 +51,8 @@ export default function CloudAndDevops() {
         {/* Animated Heading and Paragraph */}
         <div className="relative z-[3] px-6">
           <h1
-            className="text-4xl md:text-7xl font-extrabold text-white mb-6 tracking-wide flex flex-wrap justify-center"
-            style={{ fontFamily: "'PT Serif', serif" }}
+            className="text-4xl md:text-7xl font-bold text-white mb-6 tracking-wide flex flex-wrap justify-center"
+            style={{ fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" }}
           >
             {"Cloud Computing & DevOps".split("").map((letter, i) => (
               <span
