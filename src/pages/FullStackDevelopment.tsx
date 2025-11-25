@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Layers, Rocket, Users } from "lucide-react";
 import ScrollAnimation from "../animation/ScrollAnimation";
 import { useEffect, useRef, useState } from "react";
