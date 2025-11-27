@@ -162,11 +162,11 @@ const Footer: React.FC = () => {
 
             {/* Middle: Policy Links */}
             <div className="flex justify-center space-x-4">
-              <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a className="hover:text-white transition-colors">Privacy Policy</a>
               <span className="text-gray-600">|</span>
-              <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+              <a  className="hover:text-white transition-colors">Terms of Service</a>
               <span className="text-gray-600">|</span>
-              <a href="/refund" className="hover:text-white transition-colors">Refund Policy</a>
+              <a className="hover:text-white transition-colors">Refund Policy</a>
             </div>
 
             {/* Right: Payment Methods */}
