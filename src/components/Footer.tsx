@@ -1,6 +1,7 @@
 import React from "react"; 
 import { Clock, Mail, Phone } from "lucide-react";
 import ScrollAnimation from "../animation/ScrollAnimation";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -29,34 +30,34 @@ const Footer: React.FC = () => {
               <h3 className="text-xl font-semibold mb-4 text-orange-500 text-left">Trainings</h3>
               <ul className="space-y-3 text-gray-300">
                 <li>
-                  <a href="/trainings/full-stack-development" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/trainings/full-stack-development" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Full Stack Development
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/trainings/ai-ml" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/trainings/ai-ml" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     AI & Machine Learning
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/trainings/data-analytics" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/trainings/data-analytics" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Data Analytics and Power BI
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/trainings/cloud-devops" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/trainings/cloud-devops" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Cloud Computing & DevOps
-                  </a>
+                  </Link>
                 </li>
                  <li>
-                  <a href="/trainings" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/trainings" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     ...more 
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -68,34 +69,34 @@ const Footer: React.FC = () => {
               <h3 className="text-xl font-semibold mb-4 text-orange-500 text-left">Company</h3>
               <ul className="space-y-3 text-gray-300">
                 <li>
-                  <a href="/about-infovance" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/about-infovance" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     About Infovance
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/innovation" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/innovation" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Innovations
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/solutions" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/solutions" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Solutions
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/insights" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/insights" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Insights
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/connect" className="hover:text-white transition-colors flex items-center">
+                  <Link to="/connect" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Connect
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
