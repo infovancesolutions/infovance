@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
         <ScrollAnimation delay={1000}><img
           src="/hero-img.png"
           alt="Digital innovation at Infovance"
-          className="w-3/4 sm:w-2/3 md:w-full max-w-md rounded-2xl shadow-lg"
+          className="w-3/4 sm:w-2/3 md:w-full max-w-md "
         /></ScrollAnimation>
       </div>
 
