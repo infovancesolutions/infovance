@@ -43,7 +43,7 @@ export default function FullStackDevelopment() {
         {/* ===== HERO SECTION ===== */}
       <div
         ref={sectionRef}
-        className="relative w-full h-[36vh] md:h-[70vh] md:mt-2 flex flex-col justify-center items-center text-center overflow-hidden"
+        className="relative w-full h-[36vh] md:h-[70vh] mt-12 md:mt-2 flex flex-col justify-center items-center text-center overflow-hidden"
       >
         {/* 🎥 Background Video */}
         <video
