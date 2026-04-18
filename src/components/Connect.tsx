@@ -288,7 +288,7 @@ const Connect: React.FC = () => {
   {/* FULL FIX: prevent overlap + dropdown escaping */}
   <div className="relative h-[55px] z-[10]">
     <PhoneInput
-      country={"020"}
+      country={"20"}
       value={formData.phone}
       onChange={(phone) => setFormData((prev) => ({ ...prev, phone }))}
 
