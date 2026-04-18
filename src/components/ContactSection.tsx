@@ -130,7 +130,7 @@ const ContactSection: React.FC = () => {
         }
       `}</style>
 
-      <div className="grid md:grid-cols-5 gap-10 items-stretch max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-5 gap-10 items-stretch max-w-7xl mx-auto w-full px-4 md:px-0">
         <div className="md:col-span-3 flex flex-col justify-between">
           <div>
             <ScrollAnimation delay={100}>

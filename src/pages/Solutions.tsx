@@ -134,12 +134,12 @@ const Solutions: React.FC = () => {
   <div className="relative z-10 w-full flex justify-end items-center h-full px-10 md:px-20 mt-12">
     <div className="w-full md:w-[60%] text-center text-white">
       <ScrollAnimation delay={0}>
-        <h1 className="text-5xl md:text-5xl font-extrabold mb-6 leading-tight">
+        <h1 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
           Transforming Challenges into Scalable Solutions
         </h1>
       </ScrollAnimation>
       <ScrollAnimation delay={100}>
-        <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
+        <p className="text-gray-200 text-sm md:text-xl leading-relaxed">
           At Infovance, we turn complex business problems into digital
           growth engines through innovation, automation, and intelligence.
         </p>
@@ -265,7 +265,7 @@ const Solutions: React.FC = () => {
   </div>
 </section>
 
-      <section className="relative w-full py-10 px-6 md:px-16 bg-gradient-to-br from-orange-50 via-white to-orange-100 overflow-hidden">
+      <section className="relative w-full py-10 px-6 md:px-16 bg-gradient-to-br from-orange-50 via-white to-white overflow-hidden">
   {/* Header */}
   <div className="text-center relative z-10 max-w-4xl mx-auto">
     <ScrollAnimation delay={0}>
@@ -289,7 +289,7 @@ const Solutions: React.FC = () => {
   {/* Categorized Highlights */}
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center mt-16 max-w-6xl mx-auto">
     <ScrollAnimation delay={150}>
-      <div className="bg-white/40 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+      <div className="bg-white/40 backdrop-blur-sm p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
         <h3 className="text-xl font-bold text-orange-800 mb-3">Cloud & Infrastructure</h3>
         <p className="text-gray-700">From AWS to Azure, our cloud backbone ensures security, agility, and global reach enabling businesses to scale effortlessly.</p>
       </div>
@@ -336,8 +336,8 @@ const Solutions: React.FC = () => {
   </div>
 
   {/* Gradient Overlays */}
-  <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-orange-50 via-orange-50/70 to-transparent z-20"></div>
-  <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-orange-50 via-orange-50/70 to-transparent z-20"></div>
+  {/* <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-orange-50 via-orange-50/70 to-transparent z-20"></div>
+  <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-orange-50 via-orange-50/70 to-transparent z-20"></div> */}
 
   {/* Marquee Animations */}
   <style>{`

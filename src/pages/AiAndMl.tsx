@@ -37,7 +37,7 @@ export default function AiAndMl() {
       >
         {/* 🎥 Background Video */}
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-[1]"
+          className="absolute top-0 left-0 w-full h-full md:object-cover z-[1]"
           src="/ai-ml- hero.mp4"
           autoPlay
           loop

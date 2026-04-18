@@ -192,10 +192,10 @@ const Connect: React.FC = () => {
           <p className="text-gray-700">
             <strong>Phone: </strong>
             <a
-              href="tel:+919876543210"
+              href="tel:+02034880348"
               className="text-teal-600 hover:underline"
             >
-              +44  75 444 76666
+              +020 348 80 348
             </a>
           </p>
         </div>
@@ -288,7 +288,7 @@ const Connect: React.FC = () => {
   {/* FULL FIX: prevent overlap + dropdown escaping */}
   <div className="relative h-[55px] z-[10]">
     <PhoneInput
-      country={"gb"}
+      country={"020"}
       value={formData.phone}
       onChange={(phone) => setFormData((prev) => ({ ...prev, phone }))}
 

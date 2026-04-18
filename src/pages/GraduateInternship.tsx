@@ -38,7 +38,7 @@ export default function GraduateInternship() {
           }, []);
     
   return (
-    <section id="trainings/graduate-internship" className="w-full min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-100 text-gray-800 overflow-hidden">
+    <section id="graduate-internship" className="w-full min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-100 text-gray-800 overflow-hidden">
         {/* ===== HERO SECTION ===== */}
       <div
         ref={sectionRef}
@@ -60,10 +60,10 @@ export default function GraduateInternship() {
         {/* Animated Heading and Paragraph */}
         <div className="relative z-[3] px-6">
           <h1
-            className="text-3xl md:text-5xl font-bold text-white mt-72 tracking-wide flex flex-wrap justify-center"
+            className="text-2xl md:text-5xl font-bold text-white mt-72 tracking-wide flex flex-wrap justify-center"
             style={{ fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif"}}
           >
-            {"Start Your Professional Journey with Infovance".split("").map((letter, i) => (
+            {"Start Your Professional    Journey with Infovance".split("").map((letter, i) => (
               <span
                 key={i}
                 className="inline-block opacity-0"
@@ -83,7 +83,7 @@ export default function GraduateInternship() {
       {/* ===== HERO SECTION ===== */}
       <div className="text-center py-12 px-6 md:px-16">
         <ScrollAnimation delay={0}>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-orange-900 mb-4">
+          <h1 className="text-3xl md:text-6xl font-extrabold text-orange-900 mb-4">
             Graduate Internship Program
           </h1>
         </ScrollAnimation>

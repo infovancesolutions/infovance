@@ -10,6 +10,7 @@ interface NavItem {
 
 const navLinks: NavItem[] = [
   { title: "Home", href: "" },
+  { title: "Graduate Internship" , href: "graduate-internship"},
   { title: "Innovations", href: "innovation" },
   { title: "Solutions", href: "solutions" },
   {
@@ -24,12 +25,12 @@ const navLinks: NavItem[] = [
       { title: "UI/UX Design Masterclass", href: "trainings/ui-ux" },
       { title: "Digital Marketing & SEO", href: "trainings/digital-marketing" },
       { title: "Corporate Upskilling", href: "trainings/corporate-upskilling" },
-      { title: "Graduate Internship", href: "trainings/graduate-internship" },
-      { title: "Career Accelerator", href: "trainings/career-accelerator" },
+      // { title: "Graduate Internship", href: "trainings/graduate-internship" },
+      // { title: "Career Accelerator", href: "trainings/career-accelerator" },
     ],
   },
   { title: "Insights", href: "insights" },
-  { title: "Connect", href: "connect" },
+  { title: "Career", href: "career" },
 ];
 
 const Header: React.FC = () => {

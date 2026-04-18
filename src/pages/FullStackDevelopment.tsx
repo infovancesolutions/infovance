@@ -43,11 +43,11 @@ export default function FullStackDevelopment() {
         {/* ===== HERO SECTION ===== */}
       <div
         ref={sectionRef}
-        className="relative w-full h-[70vh] flex flex-col justify-center items-center text-center overflow-hidden"
+        className="relative w-full h-[40vh] md:h-[70vh] mt-24 flex flex-col justify-center items-center text-center overflow-hidden"
       >
         {/* 🎥 Background Video */}
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-[1]"
+          className="absolute top-0 left-0 w-full h-full object-contain md:object-cover z-[1]"
           src="/full-stack.mp4"
           autoPlay
           loop

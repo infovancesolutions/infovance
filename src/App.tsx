@@ -61,8 +61,8 @@ function App() {
             <Route path='/trainings/ai-ml' element={<AiAndMl/>}/>
             <Route path='/trainings/data-analytics' element={<DataAnalytics/>}/>
             <Route path='/trainings/corporate-upskilling' element={<CorporateUpskilling/>}/>
-            <Route path='/trainings/graduate-internship' element={<GraduateInternship/>}/>
-            <Route path='/trainings/career-accelerator' element={<CareerAccelerator/>}/>
+            <Route path='/graduate-internship' element={<GraduateInternship/>}/>
+            <Route path='/career' element={<CareerAccelerator/>}/>
             <Route path='/insights' element={<Insights/>}/>
             <Route path='/connect' element={<Connect/>}/>
             <Route path='/about-infovance' element={<About/>}/>

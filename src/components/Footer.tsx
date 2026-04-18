@@ -53,6 +53,18 @@ const Footer: React.FC = () => {
                     Cloud Computing & DevOps
                   </Link>
                 </li>
+                <li>
+                  <Link to="/trainings/cybersecurity" className="hover:text-white transition-colors flex items-center">
+                    <span className="mr-2">›</span>
+                    CyberSecurity Fundamentals
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/trainings/ui-ux" className="hover:text-white transition-colors flex items-center">
+                    <span className="mr-2">›</span>
+                    UI / UX Design Masterclass
+                  </Link>
+                </li>
                  <li>
                   <Link to="/trainings" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
@@ -75,6 +87,12 @@ const Footer: React.FC = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/graduate-internship" className="hover:text-white transition-colors flex items-center">
+                    <span className="mr-2">›</span>
+                    Graduate Internship
+                  </Link>
+                </li>
+                <li>
                   <Link to="/innovation" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Innovations
@@ -90,6 +108,12 @@ const Footer: React.FC = () => {
                   <Link to="/insights" className="hover:text-white transition-colors flex items-center">
                     <span className="mr-2">›</span>
                     Insights
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Career" className="hover:text-white transition-colors flex items-center">
+                    <span className="mr-2">›</span>
+                    Career
                   </Link>
                 </li>
                 <li>
@@ -131,10 +155,10 @@ const Footer: React.FC = () => {
                   <div>
                     <p className="text-gray-300 text-sm">Phone</p>
                     <a 
-                      href="tel:+447544476666" 
+                      href="tel:+020 348 80 348" 
                       className="text-white hover:text-orange-400 transition-colors text-sm font-medium"
                     >
-                      +44 7544 476666
+                      +020 348 80 348
                     </a>
                   </div>
                 </div>
@@ -144,7 +168,7 @@ const Footer: React.FC = () => {
                   <Clock className="w-5 h-5 text-orange-500"/>
                   <div>
                   <p className="text-gray-300 text-sm font-semibold">Support Hours</p>
-                  <p className="text-gray-300 text-sm">Mon - Sat: 9AM - 6PM</p>
+                  <p className="text-gray-300 text-sm">Mon - Fri: 9AM - 5PM</p>
                 </div></div>
               </div>
             </div>

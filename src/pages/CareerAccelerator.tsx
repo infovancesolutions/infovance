@@ -37,7 +37,7 @@ export default function CareerAccelerator() {
               }, []);
         
       return (
-    <section id="/trainings/career-accelerator" className="w-full min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-100 text-gray-800 overflow-hidden">
+    <section id="career" className="w-full min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-100 text-gray-800 overflow-hidden">
             {/* ===== HERO SECTION ===== */}
           <div
             ref={sectionRef}
@@ -57,7 +57,7 @@ export default function CareerAccelerator() {
             <div className="absolute inset-0 bg-black/50 z-[2]"></div>
     
             {/* Animated Heading and Paragraph */}
-            <div className="relative z-[3] px-6">
+            <div className="relative z-[3] px-1 md:px-6 ">
               <h1
                 className="text-3xl md:text-5xl font-bold text-white mt-72 tracking-wide flex flex-wrap justify-center"
                 style={{ fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif"}}
@@ -82,7 +82,7 @@ export default function CareerAccelerator() {
       {/* ===== HERO SECTION ===== */}
       <div className="text-center py-12 px-6 md:px-16">
         <ScrollAnimation delay={0}>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-orange-900 mb-4">
+          <h1 className="text-3xl md:text-6xl font-extrabold text-orange-900 mb-4">
             Career Accelerator Program
           </h1>
         </ScrollAnimation>

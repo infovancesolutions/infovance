@@ -92,7 +92,7 @@ export default function InnovationHero() {
       {/* ========== INNOVATION HERO WITH WHITE BACKGROUND AND TWO-LINE TITLE ========== */}
       <section className="relative flex flex-col items-center justify-center text-center min-h-[80vh] bg-white px-6">
         <ScrollAnimation delay={200}>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+          <h1 className="text-3xl md:text-6xl font-bold mb-6 text-gray-900">
             <div>Shaping the Future Through</div>
             <div className="text-blue-500">Intelligent Innovation</div>
           </h1>
@@ -127,20 +127,20 @@ export default function InnovationHero() {
 
          {/* RIGHT COLUMN */}
 <div className="relative">
-  <div className="overflow-hidden ml-12">
+  <div className="overflow-hidden md:ml-12">
     <div
       className="flex transition-transform duration-500 ease-in-out gap-6"
       style={{
-        transform: `translateX(-${
-          window.innerWidth < 768 ? offset * 100 : offset * (100 / 2)
-        }%)`,
-      }}
+  transform: `translateX(-${
+    window.innerWidth < 768 ? offset * 100 : offset * 50
+  }%)`,
+}}
     >
       {technologies.map((tech, index) => (
         <div
-          key={index}
-          className="flex-shrink-0 w-72 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl text-center"
-        >
+  key={index}
+  className="flex-shrink-0 w-[83vw] md:w-72 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl text-center"
+>
           <div className="flex justify-center mb-4">{tech.icon}</div>
           <h3 className="text-xl font-semibold text-gray-900 mb-2">
             {tech.title}

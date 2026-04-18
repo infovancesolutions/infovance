@@ -34,11 +34,11 @@ export default function DataAnalytics() {
         {/* ===== HERO SECTION ===== */}
       <div
         ref={sectionRef}
-        className="relative w-full h-[70vh] flex flex-col justify-center items-center text-center overflow-hidden"
+        className="relative w-full h-[40vh] md:h-[70vh] mt-24 flex flex-col justify-center items-center text-center overflow-hidden"
       >
         {/* 🎥 Background Video */}
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-[1]"
+          className="absolute top-0 left-0 w-full h-full md:object-cover z-[1]"
           src="/data-analytics-hero.mp4"
           autoPlay
           loop
@@ -52,7 +52,7 @@ export default function DataAnalytics() {
         {/* Animated Heading and Paragraph */}
         <div className="relative z-[3] px-6">
           <h1
-            className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-wide flex flex-wrap justify-center"
+            className="text-4xl md:text-7xl font-bold text-white mb-6 tracking-wide flex flex-wrap justify-center"
             style={{ fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" }}
           >
             {"Data Analytics & Power BI".split("").map((letter, i) => (
