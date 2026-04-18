@@ -25,8 +25,6 @@ const navLinks: NavItem[] = [
       { title: "UI/UX Design Masterclass", href: "trainings/ui-ux" },
       { title: "Digital Marketing & SEO", href: "trainings/digital-marketing" },
       { title: "Corporate Upskilling", href: "trainings/corporate-upskilling" },
-      // { title: "Graduate Internship", href: "trainings/graduate-internship" },
-      // { title: "Career Accelerator", href: "trainings/career-accelerator" },
     ],
   },
   { title: "Insights", href: "insights" },
@@ -52,42 +50,16 @@ const Header: React.FC = () => {
   }, [location.pathname]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full z-50  bg-headerbg shadow-md">
-      {/* Top Info Bar */}
-      {/* <div className="w-full bg-orange-200 text-orange-900 text-sm px-4 md:px-10 py-2 flex justify-between items-center">
-        <div className="flex flex-wrap items-center gap-3">
-          <div className="flex items-center gap-1">
-            <Mail className="w-4 h-4 text-orange-600" />
-            <a href="mailto:info@infovance.com" className="font-semibold hover:underline">
-              info@infovance.com
-            </a>
-          </div>
-          <div className="flex items-center gap-1">
-            <Phone className="w-4 h-4 text-orange-600" />
-            <a href="tel:+1234567890" className="font-semibold hover:underline">
-              +1 234 567 890
-            </a>
-          </div>
-        </div>
-        <div className="flex items-center gap-4">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-            <Linkedin className="w-4 h-4 text-orange-600" />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer">
-            <Twitter className="w-4 h-4 text-orange-600" />
-          </a>
-        </div>
-      </div> */}
-
+    <header className="fixed top-0 left-0 right-0 w-full z-50 bg-headerbg shadow-md">
       {/* Main Navigation */}
       <div className="w-full px-4 md:px-10 py-1 flex items-center justify-between">
-  <Link to="/">
-    <img 
-      src="/Info-logos-2.png" 
-      alt="Infovance Logo" 
-      className="h-24 md:h-24 w-24 rounded-full object-contain"
-    />
-  </Link>
+        <Link to="/">
+          <img 
+            src="/Info-logos-2.png" 
+            alt="Infovance Logo" 
+            className="h-24 md:h-24 w-24 rounded-full object-contain"
+          />
+        </Link>
 
         {/* ===== Desktop Menu ===== */}
         <nav className="hidden md:flex space-x-4 relative">
@@ -123,7 +95,7 @@ const Header: React.FC = () => {
           ))}
         </nav>
 
-        {/* Register Button */}
+        {/* Register Button - Desktop */}
         <div className="hidden md:flex">
           <button onClick={()=>navigate("/connect")} className="bg-orange-700 hover:bg-orange-600 text-white font-semibold py-2 px-5 -mr-20 rounded-full transition-all duration-300 mr-10">
             Register
@@ -140,53 +112,67 @@ const Header: React.FC = () => {
 
       {/* ===== Mobile Menu ===== */}
       {menuOpen && (
-  <div
-    className="absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 flex flex-col space-y-1 md:hidden overflow-y-auto"
-    style={{
-      maxHeight: "80vh", // allow scroll for tall dropdowns
-      WebkitOverflowScrolling: "touch", // smooth scrolling on iOS
-    }}>
-{navLinks.map((link) => (
-      <div key={link.title}>
-        {/* Main Mobile Link */}
         <div
-          className={`flex justify-between items-center px-3 py-2 rounded-full font-medium cursor-pointer transition-all duration-300 ${
-            activeLink === (link.href || "home")
-              ? "bg-orange-500 text-white"
-              : "text-orange-900 hover:bg-orange-100"
-          }`}
-          onClick={() => {
-            if (link.submenu) {
-              setTrainingOpen(trainingOpen === link.title ? "" : link.title);
-            } else {
-              navigate(`/${link.href}`);
-              setMenuOpen(false);
-            }
+          className="absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 flex flex-col space-y-1 md:hidden overflow-y-auto"
+          style={{
+            maxHeight: "80vh",
+            WebkitOverflowScrolling: "touch",
           }}
         >
-          <span>{link.title}</span>
-          {link.submenu && <ChevronDown className="w-4 h-4" />}
-        </div>
-
-        {/* Submenu (Trainings dropdown) */}
-        {link.submenu && trainingOpen === link.title && (
-          <div className="pl-6 mt-1 text-left space-y-1">
-            {link.submenu.map((item) => (
-              <Link
-                key={item.title}
-                to={`/${item.href}`}
-                className="block py-1 text-sm text-orange-800 hover:underline"
-                onClick={() => setMenuOpen(false)}
+          {navLinks.map((link) => (
+            <div key={link.title}>
+              {/* Main Mobile Link */}
+              <div
+                className={`flex justify-between items-center px-3 py-2 rounded-full font-medium cursor-pointer transition-all duration-300 ${
+                  activeLink === (link.href || "home")
+                    ? "bg-orange-500 text-white"
+                    : "text-orange-900 hover:bg-orange-100"
+                }`}
+                onClick={() => {
+                  if (link.submenu) {
+                    setTrainingOpen(trainingOpen === link.title ? "" : link.title);
+                  } else {
+                    navigate(`/${link.href}`);
+                    setMenuOpen(false);
+                  }
+                }}
               >
-                {item.title}
-              </Link>
-            ))}
+                <span>{link.title}</span>
+                {link.submenu && <ChevronDown className="w-4 h-4" />}
+              </div>
+
+              {/* Submenu (Trainings dropdown) */}
+              {link.submenu && trainingOpen === link.title && (
+                <div className="pl-6 mt-1 text-left space-y-1">
+                  {link.submenu.map((item) => (
+                    <Link
+                      key={item.title}
+                      to={`/${item.href}`}
+                      className="block py-1 text-sm text-orange-800 hover:underline"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+          
+          {/* Register Button - Mobile */}
+          <div className="pt-4 mt-2 border-t border-gray-200">
+            <button 
+              onClick={() => {
+                navigate("/connect");
+                setMenuOpen(false);
+              }} 
+              className="w-full bg-orange-700 hover:bg-orange-600 text-white font-semibold py-3 px-5 rounded-full transition-all duration-300"
+            >
+              Register
+            </button>
           </div>
-        )}
-      </div>
-    ))}
-  </div>
-)}
+        </div>
+      )}
     </header>
   );
 };
