@@ -1,28 +1,22 @@
-# Redirects and Rewrites
+# Redirects for SPA - but exclude static assets
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
   force = true
+  # Don't redirect files with extensions (assets)
+  conditions = { Path = "/*", Not = { Path = "/assets/*" } }
 
-# Optional: Configure build settings
-[build]
-  command = "npm run build"
-  publish = "dist"
-
-# Optional: Set environment variables
-[build.environment]
-  NODE_VERSION = "18"
-
-# Optional: Handle 404 pages
+# Alternative: More specific redirect rules
 [[redirects]]
-  from = "/404.html"
+  from = "/*"
   to = "/index.html"
   status = 200
+  # Only apply to routes that don't have a file extension
+  force = true
 
-# Optional: API redirects if needed
 [[redirects]]
-  from = "/api/*"
-  to = "/api/:splat"
+  from = "/assets/*"
+  to = "/assets/:splat"
   status = 200
   force = true

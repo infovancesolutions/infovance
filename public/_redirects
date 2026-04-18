@@ -1,0 +1,5 @@
+# Handle static assets first - don't redirect them
+/assets/*   /assets/:splat   200
+
+# Handle all other routes for SPA
+/*    /index.html   200
