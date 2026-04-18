@@ -1,0 +1,28 @@
+# Redirects and Rewrites
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
+
+# Optional: Configure build settings
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Optional: Set environment variables
+[build.environment]
+  NODE_VERSION = "18"
+
+# Optional: Handle 404 pages
+[[redirects]]
+  from = "/404.html"
+  to = "/index.html"
+  status = 200
+
+# Optional: API redirects if needed
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
+  force = true
