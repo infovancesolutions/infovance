@@ -34,7 +34,7 @@ export default function DataAnalytics() {
         {/* ===== HERO SECTION ===== */}
       <div
         ref={sectionRef}
-        className="relative w-full h-[70vh] flex flex-col justify-center items-center text-center overflow-hidden"
+        className="relative w-full h-[36vh] h-[70vh] flex flex-col justify-center items-center text-center overflow-hidden"
       >
         {/* 🎥 Background Video */}
         <video
